@@ -5,7 +5,7 @@ namespace AppBundle\Service;
 use Predis;
 
 /**
-* Here you have to implement a CacheService with the operations above.
+* Here you have to implement a CacheService with the operations below.
 * It should contain a failover, which means that if you cannot retrieve
 * data you have to hit the Database.
 **/

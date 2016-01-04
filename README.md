@@ -28,8 +28,8 @@ Minimum Requirements
 
 Installation
 ------
-* $ git clone git@bitbucket.org:easytaxi/interview-cache-failover.git
-* $ cd interview-cache-failover/
+* $ git clone git@bitbucket.org:easytaxi/interview-cachefailover.git
+* $ cd interview-cachefailover/
 * $ composer install
 * $ php app/console server:run
 * Open http://127.0.0.1:8000/customers in your browser (check if everything is fine)
@@ -41,4 +41,4 @@ Installation
 Running tests
 ------
 * Install PHPUnit
-* In projects root run: phpunit
+* In project root run: phpunit
