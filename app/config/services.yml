@@ -3,5 +3,11 @@ services:
         class:        AppBundle\Service\DatabaseService
         arguments:    [%database_host%, %database_port%, %database_name%]
     cache_service:
-        class:        AppBundle\Service\CacheService
+        class:        AppBundle\Service\RedisService
         arguments:    [%cache_host%, %cache_port%, %cache_prefix%]
+    integration_service:
+        class:        AppBundle\Service\IntegrationService
+        arguments:    ["@database_service", "@cache_service"]
+    customers_controller:
+        class:        AppBundle\Controller\CustomersController
+        arguments:    ["@integration_service"]

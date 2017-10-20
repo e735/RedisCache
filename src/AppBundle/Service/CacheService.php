@@ -2,32 +2,14 @@
 
 namespace AppBundle\Service;
 
-use Predis;
+interface CacheService {
+    
+    public function isOK();
 
-/**
-* Here you have to implement a CacheService with the operations below.
-* It should contain a failover, which means that if you cannot retrieve
-* data you have to hit the Database.
-**/
-class CacheService
-{
-    public function __construct($host, $port, $prefix)
-    {
+    public function get($key);
 
-    }
+    public function set($key, $value);
 
-    public function get($key)
-    {
+    public function del($key);
 
-    }
-
-    public function set($key, $value)
-    {
-
-    }
-
-    public function del($key)
-    {
-
-    }
 }

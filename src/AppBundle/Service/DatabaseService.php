@@ -27,4 +27,8 @@ class DatabaseService
     {
         return $this->database;
     }
+    
+    public function getAll($allData) {
+        return $this->database->allData;
+    }
 }
